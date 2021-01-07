@@ -22,7 +22,7 @@ function add() {
 
 function sub() {
    if (validate()) {
-      operatorA =- parseFloat(result);
+      operatorA = parseFloat(result);
       operation = '-';
       result = '';
       display.value = operatorA;
@@ -53,6 +53,10 @@ function resolve() {
    display.value = result;
 }
 
+function del() {
+   // code
+}
+
 function clean() {
    display.value = '';
    result = '';
@@ -62,7 +66,7 @@ function clean() {
 }
 
 function validate() {
-   if (result.length > 0) {
+   if (result.length > 0 || display.value != '') {
       return true;
    } else {
       display.focus();
