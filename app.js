@@ -32,7 +32,7 @@ function sub() {
 function mult() {
    if (validate()) {
       operatorA = parseFloat(result);
-      operation = '*';
+      operation = 'x';
       result = '';
       display.value = operatorA;
    }
@@ -41,7 +41,7 @@ function mult() {
 function div() {
    if (validate()) {
       operatorA = parseFloat(result);
-      operation = '/';
+      operation = '÷';
       result = '';
       display.value = operatorA;
    }
@@ -61,11 +61,12 @@ function resolve() {
       case '-':
          result = operatorA - operatorB;
          break;
-      case '*':
+      case 'x':
          result = operatorA * operatorB;
          break;
-      case '/':
+      case '÷':
          result = operatorA / operatorB;
+         break;
 
       default:
          break;

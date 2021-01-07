@@ -11,26 +11,26 @@
     <div class="calculator">
         <input type="text" id="calc-display" readonly>
         <div class="calc-body">
-            <input onclick="typeButton(this.value)" type="button" value="0">
-            <input onclick="typeButton(this.value)" type="button" value="1">
-            <input onclick="typeButton(this.value)" type="button" value="2">
-            <input onclick="typeButton(this.value)" type="button" value="3">
-            <input onclick="typeButton(this.value)" type="button" value="4">
-            <input onclick="typeButton(this.value)" type="button" value="5">
-            <input onclick="typeButton(this.value)" type="button" value="6">
-            <input onclick="typeButton(this.value)" type="button" value="7">
-            <input onclick="typeButton(this.value)" type="button" value="8">
-            <input onclick="typeButton(this.value)" type="button" value="9">
+            <input id="btn-0" onclick="typeButton(this.value)" type="button" value="0">
+            <input id="btn-1" onclick="typeButton(this.value)" type="button" value="1">
+            <input id="btn-2" onclick="typeButton(this.value)" type="button" value="2">
+            <input id="btn-3" onclick="typeButton(this.value)" type="button" value="3">
+            <input id="btn-4" onclick="typeButton(this.value)" type="button" value="4">
+            <input id="btn-5" onclick="typeButton(this.value)" type="button" value="5">
+            <input id="btn-6" onclick="typeButton(this.value)" type="button" value="6">
+            <input id="btn-7" onclick="typeButton(this.value)" type="button" value="7">
+            <input id="btn-8" onclick="typeButton(this.value)" type="button" value="8">
+            <input id="btn-9" onclick="typeButton(this.value)" type="button" value="9">
 
-            <input type="button" value=".">
-            <input onclick="add()" type="button" value="+">
-            <input onclick="sub()" type="button" value="-">
-            <input onclick="mult()" type="button" value="*">
-            <input onclick="div()" type="button" value="/">
-            <input onclick="equal()" type="button" value="=">
+            <input id="btn-dot" type="button" value=".">
+            <input id="btn-plus" onclick="add()" type="button" value="+">
+            <input id="btn-sub" onclick="sub()" type="button" value="-">
+            <input id="btn-mul" onclick="mult()" type="button" value="x">
+            <input id="btn-div" onclick="div()" type="button" value="÷">
+            <input id="btn-equal" onclick="equal()" type="button" value="=">
 
-            <input onclick="clean()" type="button" value="C">
-            <input onclick="del()" type="button" value="DEL">
+            <input id="btn-clear" onclick="clean()" type="button" value="C">
+            <input id="btn-del" onclick="del()" type="button" value="DEL">
         </div>
     </div>
 

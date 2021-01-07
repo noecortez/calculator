@@ -36,6 +36,7 @@ input[type="text"]:focus {
    flex-grow: 1;
    display: grid;
    grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(5, 1fr);
 }
 
 input[type="button"] {
@@ -49,3 +50,20 @@ input[type="button"]:active {
    box-shadow: inset 0px 1px 5px rgba(0, 0, 0, 0.192);
 }
 
+/* grid-area: grid-row-start, grid-column-start, grid-row-end, grid-column-end */
+#btn-0 {grid-area: 5/1/6/3;}
+#btn-1 {grid-area: 4/1/5/2;}
+#btn-2 {grid-area: 4/2/5/3;}
+#btn-3 {grid-area: 4/3/5/4;}
+#btn-4 {grid-area: 3/1/4/2;}
+#btn-5 {grid-area: 3/2/4/3;}
+#btn-6 {grid-area: 3/3/4/4;}
+#btn-7 {grid-area: 2/1/3/2;}
+#btn-8 {grid-area: 2/2/3/3;}
+#btn-9 {grid-area: 2/3/3/4;}
+#btn-dot {grid-area: 5/3/6/4;}
+#btn-equal {grid-area: 4/4/6/5;}
+#btn-plus {grid-area: 3/4/4/5;}
+#btn-sub {grid-area: 2/4/3/5;}
+#btn-div {grid-area: 1/4/2/5;}
+#btn-mul {grid-area: 1/3/2/4;}
