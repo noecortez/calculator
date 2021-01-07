@@ -77,7 +77,10 @@ function resolve() {
 }
 
 function del() {
-   // code
+   if (validate()) {
+      result = result.substring(0, result.length - 1);
+      display.value = result;
+   }
 }
 
 function clean() {
