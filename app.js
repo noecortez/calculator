@@ -6,7 +6,7 @@ let operation = '';
 
 function typeButton(button) {
    result += button;
-   if (result.length < 10) {
+   if (result.length < 9) {
       display.value = result;
    }
 }
@@ -15,6 +15,15 @@ function add() {
    if (validate()) {
       operatorA += parseFloat(result);
       operation = '+';
+      result = '';
+      display.value = operatorA;
+   }
+}
+
+function sub() {
+   if (validate()) {
+      operatorA =- parseFloat(result);
+      operation = '-';
       result = '';
       display.value = operatorA;
    }
@@ -31,7 +40,10 @@ function resolve() {
       case '+':
          result = operatorA + operatorB;
          break;
-   
+      case '-':
+         result = operatorA - operatorB;
+         break;
+
       default:
          break;
    }
