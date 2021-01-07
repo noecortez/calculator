@@ -29,6 +29,24 @@ function sub() {
    }
 }
 
+function mult() {
+   if (validate()) {
+      operatorA = parseFloat(result);
+      operation = '*';
+      result = '';
+      display.value = operatorA;
+   }
+}
+
+function div() {
+   if (validate()) {
+      operatorA = parseFloat(result);
+      operation = '/';
+      result = '';
+      display.value = operatorA;
+   }
+}
+
 function equal() {
    operatorB = parseFloat(result);
    result = '';
@@ -43,6 +61,11 @@ function resolve() {
       case '-':
          result = operatorA - operatorB;
          break;
+      case '*':
+         result = operatorA * operatorB;
+         break;
+      case '/':
+         result = operatorA / operatorB;
 
       default:
          break;
